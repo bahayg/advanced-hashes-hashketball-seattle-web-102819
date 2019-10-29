@@ -303,3 +303,67 @@ def long_name_steals_a_ton?
     return true
   end
 end
+
+# # def num_points_scored(players_names)
+# #   game_hash.each do |team_location, team_info|
+# #     team_info[:players].each do |player_info|
+# #       if player_info[0] === players_names
+# #         return player_info[1][:points]
+# #       end
+# #     end
+# #   end
+# # end 
+
+# def get_all_players
+#   temp = game_hash[:home][:players].merge(game_hash[:away][:players])
+# end
+
+# def num_points_scored(player_name)
+#   get_all_players[player_name][:points]
+
+# end
+
+# def shoe_size(player_name)
+#   get_all_players[player_name][:shoe]
+# end 
+
+# def get_team(team)
+#   game_hash.find do | key, hash |
+#     if hash[:team_name] === team
+#       return hash
+#     end
+#   end 
+# end 
+
+# def team_colors(team)
+#   get_team(team)[:colors]
+# end 
+
+# def team_names
+#   teams = game_hash.values
+#   temp = teams.map do |team|
+#     team.fetch(:team_name)
+#   end 
+# end 
+
+# def player_numbers(team)
+#   get_team(team)[:players].map do |bannana, cat|
+#     cat[:number]
+#   end 
+# end
+
+# def player_stats(player_name)
+#   get_all_players[player_name]
+# end 
+
+# def big_shoe_rebounds
+#   bigShoe = 0
+#   bigShoePlayer = ''
+#   get_all_players.each do |key, item|
+#     if item[:shoe] > bigShoe
+#       bigShoe = item[:shoe]
+#       bigShoePlayer = get_all_players[key]
+#     end 
+#   end 
+#   bigShoePlayer[:rebounds]
+# end 
